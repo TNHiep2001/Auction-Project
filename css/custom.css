@@ -1,0 +1,86 @@
+
+.numbers {
+    padding: 0px;
+    width: 45px;
+    text-align: center;
+    font-family: Arial;             
+    font-size: 28px;
+    font-weight: bold;    /* options are normal, bold, bolder, lighter */
+    font-style: normal;   /* options are normal or italic */
+    color: #FFFFFF;       /* change color using the hexadecimal color codes for HTML */
+}
+.title {    /* the styles below will affect the title under the numbers, i.e., “Days”, “Hours”, etc. */
+    border-style: none;
+    padding: 0px 0px 3px 0px;
+    width: 45px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: bold;    /* options are normal, bold, bolder, lighter */
+    color: #FFFFFF;       /* change color using the hexadecimal color codes for HTML */
+}
+#table {
+    width: 350px;
+    height: 70px;
+    border-style: ridge;
+    border-width: 3px;
+    border-color: #666666;       /* change color using the hexadecimal color codes for HTML */
+    background-color: #222222;   /* change color using the hexadecimal color codes for HTML */
+    margin: 0px auto;
+    position: relative;   /* leave as "relative" to keep timer centered on your page, or change to "absolute" then change the values of the "top" and "left" properties to position the timer */
+    top: 0px;             /* change to position the timer */
+    left: 0px;            /* change to position the timer; delete this property and it's value to keep timer centered on page */
+}
+.create-btn{
+    border: 0 ; 
+    background-color: #4fbfa8;
+    color: white;
+    width: 120px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+.tab-info{
+    display: none;
+}
+.tab-info.active{
+    display: block;
+}
+
+.admin__select-option{
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    top: calc( 100% + 2px );
+}
+
+.admin__select-option-list{
+    padding: 12px 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px #333;
+}
+
+.admin__select-option-list::before{
+    content: "";
+    position: absolute;
+    top: -16px;
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+}
+
+.admin__select-option-list::after{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 16px;
+    border-width: 12px 18px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent; 
+    z-index: 1;
+}
+
+.admin__select-option-item{
+    color: #333;
+    list-style: none;
+    padding: 8px 16px;
+}
